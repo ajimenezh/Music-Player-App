@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <!--
+   <LinearLayout 
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:gravity="center_vertical|left"
+       android:background="#000000"
+       android:paddingLeft="0dp"
+       android:paddingRight="0dp">
+        <ImageButton 
+        android:id="@+id/btnRepeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_repeat"
+        android:gravity="left"
+        android:background="@null"/>
+       <ImageButton
+           android:id="@+id/btnPrevious" 
+           android:src="@drawable/ic_action_previous"
+           android:layout_width="65dip"
+           android:layout_height="65dip"
+           android:paddingLeft="0dip"
+           android:background="@null"/>
+       <ImageButton 
+           android:id="@+id/btnPlay"
+           android:src="@drawable/ic_action_play"
+           android:layout_width="65dip"
+           android:layout_height="65dip"
+           android:paddingLeft="20dip"
+           android:paddingRight="20dip"
+           android:background="@null"/>
+       <ImageButton 
+           android:id="@+id/btnNext"
+           android:src="@drawable/ic_action_next"
+           android:layout_width="65dip"
+           android:layout_height="65dip"
+           android:paddingRight="0dip"
+           android:background="@null"/>     
+     <ImageButton 
+        android:id="@+id/btnShuffle" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_shuffle"
+        android:gravity="right"
+        android:background="@null"/>
+   </LinearLayout>-->
+   
+   <LinearLayout
+       android:id="@+id/player_footer_bg"
+       android:layout_width="0dip"
+       android:layout_height="match_parent"
+       android:layout_weight="1.00"
+       android:gravity="center|right"
+       android:orientation="vertical" >
+       
+       <LinearLayout
+           android:id="@+id/player_header_bg"
+           android:layout_width="fill_parent"
+           android:layout_height="60dip"
+           android:paddingLeft="5dp"
+           android:paddingRight="5dp" >
+
+           <TwoLineListItem
+               android:id="@+id/cur_song_playing"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1" >
+
+               <TextView
+                   android:id="@+id/player_title"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:gravity="top"
+                   android:paddingLeft="20dp"
+                   android:paddingTop="10sp"
+                   android:text="Song"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:id="@+id/player_artist"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:gravity="bottom"
+                   android:paddingLeft="40dp"
+                   android:paddingTop="34sp"
+                   android:text="Artist"
+                   android:textStyle="italic" />
+           </TwoLineListItem>
+
+           <ImageButton 
+                android:id="@+id/btn_cur_song_playing"
+                android:src="@drawable/ic_action_play_smaller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dip"
+                android:background="@null"/>
+       </LinearLayout>
+       
+           <LinearLayout
+        android:id="@+id/tab_selector"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	 	>
+        
+          <LinearLayout
+              android:id="@+id/button1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.5"
+              android:paddingTop="5dp"
+	    	  android:paddingBottom="0dp"
+	    	  android:orientation="vertical"
+			>
+              
+              <TextView
+                  android:id="@+id/text2"
+	              android:layout_width="match_parent"
+	              android:layout_height="wrap_content"
+	              android:paddingLeft="20dp"
+	              android:text="Songs"
+	              android:textSize="16dp"
+	              android:layout_marginBottom="15dp" />
+              <View
+                 android:id="@+id/line1"
+				 android:layout_width="wrap_content"
+				 android:gravity="bottom"
+				 android:layout_height="5dp"
+				 android:background="#2E9AFE" />
+          </LinearLayout>
+            
+        <LinearLayout
+              android:id="@+id/button2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.5"
+              android:paddingTop="5dp"
+	    	  android:paddingBottom="0dp"
+	    	  android:orientation="vertical"
+			>
+              
+              <TextView
+                  android:id="@+id/text2"
+	              android:layout_width="match_parent"
+	              android:layout_height="wrap_content"
+	              android:paddingLeft="20dp"
+	              android:text="Members"
+	              android:textSize="16dp"
+	              android:layout_marginBottom="15dp" />
+              <View
+                 android:id="@+id/line2"
+				 android:layout_width="wrap_content"
+				 android:gravity="bottom"
+				 android:layout_height="2dp"
+				 android:layout_marginTop="3dp"
+	 			 android:background="#151515" />
+          </LinearLayout>
+        
+    </LinearLayout>
+
+       <ListView
+           android:id="@android:id/list"
+           android:layout_width="fill_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1.16"
+           android:divider="#242424"
+           android:dividerHeight="1dp"
+           android:listSelector="@drawable/list_selector" />
+      
+
+       
+   </LinearLayout>
+    
+
+</LinearLayout>

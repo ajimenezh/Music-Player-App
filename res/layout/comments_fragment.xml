@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+           <LinearLayout
+           android:id="@+id/player_header_bg"
+           android:layout_width="fill_parent"
+           android:layout_height="60dip"
+           android:paddingLeft="5dp"
+           android:paddingRight="5dp" >
+
+           <TwoLineListItem
+               android:id="@+id/cur_song_playing"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1" >
+
+               <TextView
+                   android:id="@+id/player_title"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:gravity="top"
+                   android:paddingLeft="20dp"
+                   android:paddingTop="10sp"
+                   android:text="Song"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:id="@+id/player_artist"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:gravity="bottom"
+                   android:paddingLeft="40dp"
+                   android:paddingTop="34sp"
+                   android:text="Artist"
+                   android:textStyle="italic" />
+           </TwoLineListItem>
+
+           <ImageButton 
+                android:id="@+id/btn_cur_song_playing"
+                android:src="@drawable/ic_action_play_smaller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dip"
+                android:background="@null"/>
+       </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:layout_alignParentTop="true"
+        android:divider="#242424"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector" >
+    </ListView>
+    
+    <LinearLayout
+        android:id="@+id/player_header_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+	 >
+
+        <EditText
+            android:id="@+id/txtMessage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.05"
+            android:ems="10"
+ >
+
+        </EditText>
+
+        <Button
+            android:id="@+id/btnAddNewComment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:layout_marginBottom="7dp"
+            android:text="Send" />
+
+    </LinearLayout>
+
+</LinearLayout>

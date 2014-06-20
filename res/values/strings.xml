@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" translatable="false">URMusic</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="hello_world" translatable="false">Hello world!</string>
+    <string name="drawer_open" translatable="false">Slider Menu Opened</string>
+    <string name="drawer_close" translatable="false">Slider Menu Closed</string>
+    
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items" translatable="false">
+        <item >Artists</item>
+        <item >Albums</item>
+        <item >Songs</item>
+        <item >Playlists</item>
+        <item >Configurationt</item>
+    </string-array>
+    
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_alpha</item>
+        <item>@drawable/ic_alpha</item>
+        <item>@drawable/ic_alpha</item>
+        <item>@drawable/ic_alpha</item>
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/ic_alpha</item>
+    </array>
+    
+    <!-- Content Description -->
+    <string name="desc_list_item_icon" translatable="false">Item Icon</string>
+    
+    <!--Nav buttons -->
+    <string name="button_artists" translatable="false">Artists</string>
+    <string name="button_albums" translatable="false">Albums</string>
+    <string name="button_songs" translatable="false">Songs</string>
+    <string name="button_groups" translatable="false">Groups</string>
+    
+    <string name="app_id" translatable="false">1378878295700911</string>
+    <string name="foreground_service_started" translatable="false">App open</string>
+
+</resources>
